@@ -65,7 +65,7 @@ export const bricks: Record<string, Brick> = {
             name: 'oz',
         },
         createdTime: new Date('2025-12-09'),
-        finishedTime: new Date('2025-12-11'),
+        finishedTime: new Date('2025-12-10'),
     },
 
 } as const;
