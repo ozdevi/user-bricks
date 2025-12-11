@@ -67,5 +67,25 @@ export const bricks: Record<string, Brick> = {
         createdTime: new Date('2025-12-09'),
         finishedTime: new Date('2025-12-10'),
     },
+    buildFormForSubmission: {
+        name: 'buildFormForSubmission',
+        instruction: "Build a form for submission of the `Brick`",
+        isDone: false,
+        order: 7,
+        owner: {
+            name: 'quackintosh',
+        },
+        createdTime: new Date('2025-12-11'),
+    },
+    defineBrick: {
+        name: 'defineBrick',
+        instruction: "Define 'brick' clearly on the page. pretend the person knows nothing.",
+        isDone: false,
+        order: 8,
+        owner: {
+            name: 'quackintosh',
+        },
+        createdTime: new Date('2025-12-11'),
+    },
 
 } as const;
