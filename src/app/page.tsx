@@ -34,8 +34,10 @@ export default function Home() {
         <h2>Where can I put my bricks?</h2>
         <p>
           Very good question!
-          Maybe we need some sort of stockpile when we have many bricks!
-          Until then, you can send your brick via email: <a href="mailto:sendmybrick@gmail.com">sendmybrick@gmail.com</a>
+          <Brick name="stockPileIdea" fallback={<span>{' '}</span>}>
+            <span> Maybe we need some sort of stockpile when we have many bricks! Until then </span>
+          </Brick>
+          you can send your brick via email: <a href="mailto:sendmybrick@gmail.com">sendmybrick@gmail.com</a>
         </p>
       </>}>
         <DefineBrick />

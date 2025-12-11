@@ -20,8 +20,8 @@ export const bricks: Record<string, Brick> = {
         owner: {
             name: 'oz',
         },
-        createdTime: new Date('2025-12-03'),
-        finishedTime: new Date('2025-12-03'),
+        createdTime: new Date('2025-12-04'),
+        finishedTime: new Date('2025-12-04'),
     },
     timeTraveler: {
         name: 'timeTraveler',
@@ -43,7 +43,7 @@ export const bricks: Record<string, Brick> = {
             name: 'oz',
         },
         createdTime: new Date('2025-12-01'),
-        finishedTime: new Date('2025-12-11'),
+        finishedTime: new Date('2025-12-09'),
     },
     defineForever: {
         name: 'defineForever',
@@ -54,7 +54,7 @@ export const bricks: Record<string, Brick> = {
             name: 'oz',
         },
         createdTime: new Date('2025-12-05'),
-        finishedTime: new Date('2025-12-07'),
+        finishedTime: new Date('2025-12-06'),
     },
     underConstructionGif: {
         name: 'underConstructionGif',
@@ -64,8 +64,8 @@ export const bricks: Record<string, Brick> = {
         owner: {
             name: 'oz',
         },
-        createdTime: new Date('2025-12-09'),
-        finishedTime: new Date('2025-12-10'),
+        createdTime: new Date('2025-12-07'),
+        finishedTime: new Date('2025-12-08'),
     },
     buildFormForSubmission: {
         name: 'buildFormForSubmission',
@@ -107,6 +107,17 @@ export const bricks: Record<string, Brick> = {
             name: 'tkoa',
         },
         createdTime: new Date('2025-12-11T06:48:10'),
+    },
+    stockPileIdea: {
+        name: 'stockPileIdea',
+        instruction: "Add a stockpile (todo) list for bricks.",
+        isDone: true,
+        order: 11,
+        owner: {
+            name: 'oz',
+        },
+        createdTime: new Date('2025-12-03'),
+        finishedTime: new Date('2025-12-03'),
     },
 
 } as const;
