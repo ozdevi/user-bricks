@@ -1,6 +1,7 @@
 "use client";
 
 import Brick from "@/components/Brick";
+import { DefineBrick } from "@/components/DefineBrick";
 import DefineForever from "@/components/DefineForever";
 import { Stockpile } from "@/components/Stockpile";
 import { TimeTraveller } from "@/components/TimeTraveller";
@@ -16,25 +17,30 @@ export default function Home() {
         </Brick>
         Hello, user!
       </h1>
-      <Brick name="introductoryText" fallback={
-        <span>
-          <strong>This website</strong> will be built on top of your requests. Each request is a brick and we can start a construction with them. So this is really under construction. Go bring a brick!
-        </span>
-      }>
-        <div>
-          <strong>This website</strong> will be entirely built on top of your requests. Each request is a brick and construction is on going,
-          <Brick name="defineForever" fallback={<span> forever </span>}>
-            <DefineForever />
-          </Brick>
-        </div>
-        <p>So this is really, always, under construction. Go add a brick!</p>
+      <Brick name="defineBrick" fallback={<>
+        <Brick name="introductoryText" fallback={
+          <span>
+            <strong>This website</strong> will be built on top of your requests. Each request is a brick and we can start a construction with them. So this is really under construction. Go bring a brick!
+          </span>
+        }>
+          <div>
+            <strong>This website</strong> will be entirely built on top of your requests. Each request is a brick and construction is on going,
+            <Brick name="defineForever" fallback={<span> forever </span>}>
+              <DefineForever />
+            </Brick>
+          </div>
+          <p>So this is really, always, under construction. Go add a brick!</p>
+        </Brick>
+        <h2>Where can I put my bricks?</h2>
+        <p>
+          Very good question!
+          Maybe we need some sort of stockpile when we have many bricks!
+          Until then, you can send your brick via email: <a href="mailto:sendmybrick@gmail.com">sendmybrick@gmail.com</a>
+        </p>
+      </>}>
+        <DefineBrick />
       </Brick>
-      <h2>Where can I put my bricks?</h2>
-      <p>
-        Very good question!
-        Maybe we need some sort of stockpile when we have many bricks!
-        Until then, you can send your brick via email: <a href="mailto:sendmybrick@gmail.com">sendmybrick@gmail.com</a>
-      </p>
+
       <Brick name="stockpile">
         <Stockpile />
       </Brick>

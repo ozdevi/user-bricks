@@ -79,11 +79,22 @@ export const bricks: Record<string, Brick> = {
     },
     defineBrick: {
         name: 'defineBrick',
-        instruction: "Define 'brick' clearly on the page. pretend the person knows nothing.",
+        instruction: "Define `brick` clearly on the page. pretend the person knows nothing.",
         isDone: false,
         order: 8,
         owner: {
             name: 'quackintosh',
+        },
+        createdTime: new Date('2025-12-11'),
+        finishedTime: new Date('2025-12-11'),
+    },
+    soggyCat: {
+        name: 'soggyCat',
+        instruction: "Add soggy cat meme.",
+        isDone: false,
+        order: 9,
+        owner: {
+            name: 'carrie',
         },
         createdTime: new Date('2025-12-11'),
     },
