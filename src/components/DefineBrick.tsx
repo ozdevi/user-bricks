@@ -23,12 +23,11 @@ export const DefineBrick = () => {
                 🧱 <em>“Write a poem about coffee at the top of the page.”</em> — <strong>That’s a brick.</strong>
             </li>
         </ul>
-
         <hr />
-
         <h3>Ready to build?</h3>
         <p>
             Construction never stops. Send your brick to: <a href="mailto:sendmybrick@gmail.com">sendmybrick@gmail.com</a>
         </p>
+        <hr />
     </section>)
 }

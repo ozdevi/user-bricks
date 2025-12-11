@@ -36,9 +36,11 @@ export const TimeTraveller = () => {
     return (
         <div>
             <div>
-                <label htmlFor="time-travel-slider">
-                    Time Travel: {format(previewDate, 'yyyy-MM-dd')}
-                </label>
+                <h3>
+                    <label htmlFor="time-travel-slider">
+                        Time Travel: {format(previewDate, 'yyyy-MM-dd')}
+                    </label>
+                </h3>
                 <input
                     id="time-travel-slider"
                     type="range"

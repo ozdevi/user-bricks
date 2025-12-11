@@ -53,8 +53,6 @@ export const BrickProvider = ({ children }: { children: ReactNode }) => {
                 isDone: effectiveIsDone
             };
 
-            console.log('key', key, 'effectiveIsDone', effectiveIsDone);
-
             const isCreatedInFuture = brick.createdTime && isAfter(brick.createdTime, currentDate);
             if (!isCreatedInFuture) {
                 dStockpile.push(dBricks[key]);
@@ -67,7 +65,7 @@ export const BrickProvider = ({ children }: { children: ReactNode }) => {
 
         return {
             derivedBricks: dBricks,
-            derivedStockpile: dStockpile.sort((a, b) => a.order - b.order),
+            derivedStockpile: dStockpile.sort((a, b) => b.createdTime.getTime() - a.createdTime.getTime()),
             history: Array.from(historySet).sort()
         };
     }, [currentDate]);

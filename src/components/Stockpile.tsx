@@ -8,8 +8,8 @@ export const Stockpile = () => {
 
     return (
         <div className="container mx-auto p-4">
-            <h3 className="text-xl font-bold mb-4">Stockpile (todo):</h3>
-            <ul className="mb-8">
+            <h3>Stockpile (todo):</h3>
+            <ul>
                 {stockpile.map((brick) => (
                     <li
                         key={brick.name}
@@ -26,6 +26,7 @@ export const Stockpile = () => {
                     </li>
                 ))}
             </ul>
+            <hr />
         </div>
     );
 };
