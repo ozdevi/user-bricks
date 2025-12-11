@@ -11,11 +11,11 @@ export default function Home() {
 
   return (
     <main>
+      <Brick name="userBricksLogo">
+        <img src="/assets/user-bricks-logo.png" alt="" width="100" style={{ verticalAlign: 'middle' }} className="brick-builder-user-bricks-logo inline-block" />
+      </Brick>
       <h1>
-        <Brick name="userBricksLogo">
-          <img src="/assets/user-bricks-logo.png" alt="" width="100" style={{ verticalAlign: 'middle' }} className="brick-builder-user-bricks-logo inline-block" />
-        </Brick>
-        Hello, user!
+        Hello, visitor!
       </h1>
       <Brick name="defineBrick" fallback={<>
         <Brick name="introductoryText" fallback={

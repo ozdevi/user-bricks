@@ -17,7 +17,7 @@ const Brick = ({
     isDevMode = false,
     children,
     fallback,
-    className, ...props
+    ...props
 }: BrickProps) => {
 
     const { bricks: contextBricks } = useBrickContext();
@@ -25,10 +25,9 @@ const Brick = ({
     const isDone = isDevMode ? true : (brick && brick.isDone);
 
     if (isDone) {
-        return <Tag className={className} {...props}>{children}</Tag>;
+        return <Tag {...props}>{children}</Tag>;
     } else {
-        // Vue slot "old" equivalent is the fallback prop or fallback content
-        return <Tag className={className} {...props}>{fallback}</Tag>;
+        return <Tag {...props}>{fallback}</Tag>;
     }
 };
 
