@@ -98,5 +98,15 @@ export const bricks: Record<string, Brick> = {
         },
         createdTime: new Date('2025-12-11'),
     },
+    bricksWall: {
+        name: 'bricksWall',
+        instruction: "Create a visualization of all submitted bricks(a wall, perhaps?) letting you roll over each one to see it's details",
+        isDone: false,
+        order: 10,
+        owner: {
+            name: 'tkoa',
+        },
+        createdTime: new Date('2025-12-11T06:48:10'),
+    },
 
 } as const;
