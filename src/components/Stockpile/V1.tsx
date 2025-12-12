@@ -3,7 +3,7 @@ import { useBrickContext } from '@/providers/BrickProvider';
 import React from 'react';
 import { format } from 'date-fns';
 
-export const Stockpile = () => {
+export default function Stockpile() {
     const { stockpile } = useBrickContext();
 
     return (

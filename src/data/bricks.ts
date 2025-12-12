@@ -1,7 +1,8 @@
+import dynamic from "next/dynamic";
 import { Brick } from "./types";
 
-export const bricks: Record<string, Brick> = {
-    introductoryText: {
+export const bricks: Brick[] = [
+    {
         name: 'introductoryText',
         instruction: "First brick",
         isDone: true,
@@ -9,10 +10,31 @@ export const bricks: Record<string, Brick> = {
         owner: {
             name: 'oz',
         },
-        createdTime: new Date('2025-12-01'),
+        createdTime: new Date('2025-12-01T00:00:00.000Z'),
         finishedTime: new Date('2025-12-02'),
+        versions: [{
+            version: 1,
+            name: 'IntroductoryText',
+            releaseDate: new Date('2025-12-01'),
+        },
+        {
+            version: 2,
+            name: 'IntroductoryText',
+            releaseDate: new Date('2025-12-02'),
+        },
+        {
+            version: 3,
+            name: 'IntroductoryText',
+            releaseDate: new Date('2025-12-06'),
+        },
+        {
+            version: 4,
+            name: 'IntroductoryText',
+            releaseDate: new Date('2025-12-12'),
+            instruction: "Define `brick` clearly on the page. pretend the person knows nothing.",
+        }],
     },
-    stockpile: {
+    {
         name: 'stockpile',
         instruction: "Add a stockpile (todo) list for bricks.",
         isDone: true,
@@ -22,8 +44,13 @@ export const bricks: Record<string, Brick> = {
         },
         createdTime: new Date('2025-12-04'),
         finishedTime: new Date('2025-12-04'),
+        versions: [{
+            version: 1,
+            name: 'Stockpile',
+            releaseDate: new Date('2025-12-02'),
+        }],
     },
-    timeTraveler: {
+    {
         name: 'timeTraveler',
         instruction: "Show the time line of bricks.",
         isDone: true,
@@ -31,10 +58,15 @@ export const bricks: Record<string, Brick> = {
         owner: {
             name: 'oz',
         },
-        createdTime: new Date('2025-12-01'),
+        createdTime: new Date('2025-12-01T01:00:00.000Z'),
         finishedTime: new Date('2025-12-01'),
+        versions: [{
+            version: 1,
+            name: 'TimeTraveller',
+            releaseDate: new Date('2025-12-01'),
+        }],
     },
-    userBricksLogo: {
+    {
         name: 'userBricksLogo',
         instruction: "Show a logo for the project.",
         isDone: true,
@@ -42,10 +74,15 @@ export const bricks: Record<string, Brick> = {
         owner: {
             name: 'oz',
         },
-        createdTime: new Date('2025-12-01'),
+        createdTime: new Date('2025-12-02'),
         finishedTime: new Date('2025-12-09'),
+        versions: [{
+            version: 1,
+            name: 'UserBricksLogo',
+            releaseDate: new Date('2025-12-09'),
+        }],
     },
-    defineForever: {
+    {
         name: 'defineForever',
         instruction: "Define forever",
         isDone: true,
@@ -55,8 +92,13 @@ export const bricks: Record<string, Brick> = {
         },
         createdTime: new Date('2025-12-05'),
         finishedTime: new Date('2025-12-06'),
+        versions: [{
+            version: 1,
+            name: 'DefineForever',
+            releaseDate: new Date('2025-12-06'),
+        }],
     },
-    underConstructionGif: {
+    {
         name: 'underConstructionGif',
         instruction: "Show an under construction gif.",
         isDone: true,
@@ -66,8 +108,13 @@ export const bricks: Record<string, Brick> = {
         },
         createdTime: new Date('2025-12-07'),
         finishedTime: new Date('2025-12-08'),
+        versions: [{
+            version: 1,
+            name: 'UnderConstructionGif',
+            releaseDate: new Date('2025-12-08'),
+        }],
     },
-    defineBrick: {
+    {
         name: 'defineBrick',
         instruction: "Define `brick` clearly on the page. pretend the person knows nothing.",
         isDone: true,
@@ -76,9 +123,9 @@ export const bricks: Record<string, Brick> = {
             name: 'quackintosh',
         },
         createdTime: new Date('2025-12-10'),
-        finishedTime: new Date('2025-12-11'),
+        finishedTime: new Date('2025-12-12')
     },
-    buildFormForSubmission: {
+    {
         name: 'buildFormForSubmission',
         instruction: "Build a form for submission of the `Brick`",
         isDone: false,
@@ -88,7 +135,7 @@ export const bricks: Record<string, Brick> = {
         },
         createdTime: new Date('2025-12-10'),
     },
-    soggyCat: {
+    {
         name: 'soggyCat',
         instruction: "Add soggy cat meme.",
         isDone: false,
@@ -98,7 +145,7 @@ export const bricks: Record<string, Brick> = {
         },
         createdTime: new Date('2025-12-11'),
     },
-    bricksWall: {
+    {
         name: 'bricksWall',
         instruction: "Create a visualization of all submitted bricks(a wall, perhaps?) letting you roll over each one to see it's details",
         isDone: false,
@@ -108,16 +155,15 @@ export const bricks: Record<string, Brick> = {
         },
         createdTime: new Date('2025-12-11T06:48:10'),
     },
-    stockPileIdea: {
-        name: 'stockPileIdea',
-        instruction: "Add a stockpile (todo) list for bricks.",
-        isDone: true,
-        order: 11,
-        owner: {
-            name: 'oz',
-        },
-        createdTime: new Date('2025-12-03'),
-        finishedTime: new Date('2025-12-03'),
-    },
-
-} as const;
+    // {
+    //     name: 'stockPileIdea',
+    //     instruction: "Add a stockpile (todo) list for bricks.",
+    //     isDone: true,
+    //     order: 11,
+    //     owner: {
+    //         name: 'oz',
+    //     },
+    //     createdTime: new Date('2025-12-03'),
+    //     finishedTime: new Date('2025-12-03'),
+    // },
+];

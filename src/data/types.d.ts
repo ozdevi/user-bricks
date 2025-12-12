@@ -1,3 +1,10 @@
+type Version = {
+    instruction?: string;
+    version: number;
+    name: string;
+    releaseDate: Date;
+}
+
 export type Brick = {
     name: string;
     instruction: string;
@@ -9,4 +16,5 @@ export type Brick = {
     };
     createdTime: Date;
     finishedTime?: Date;
+    versions?: Version[];
 };

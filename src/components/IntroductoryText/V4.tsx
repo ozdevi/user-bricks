@@ -1,6 +1,8 @@
-export const DefineBrick = () => {
+import Brick from "../Brick";
+
+export default function IntroductoryText() {
     return (<section>
-        <h2>This website is under eternal construction.</h2>
+        <h2>This website is under <Brick name="defineForever" /> construction.</h2>
 
         <h3>How does it work?</h3>
         <p>
