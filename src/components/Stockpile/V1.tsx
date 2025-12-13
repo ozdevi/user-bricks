@@ -17,11 +17,11 @@ export default function Stockpile() {
                     >
                         <span style={{ textDecoration: brick.isDone ? 'line-through' : 'none', color: brick.isDone ? 'gray' : 'black' }}>
                             {brick.instruction}
-                        </span>{'—'}
+                        </span>{' — '}
                         {brick.owner.profile ? (
-                            <a href={brick.owner.profile} rel="noopener noreferrer">{brick.owner.name}</a>
+                            <a href={brick.owner.profile} rel="noopener noreferrer"><strong>@{brick.owner.name}</strong></a>
                         ) : (
-                            <span>{brick.owner.name}</span>
+                            <span><strong>{brick.owner.name}</strong></span>
                         )}
                     </li>
                 ))}

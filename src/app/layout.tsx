@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { BrickProvider } from "@/providers/BrickProvider"
+import "./layout.css";
 
 export const metadata: Metadata = {
   title: "User Bricks",

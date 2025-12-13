@@ -1,0 +1,32 @@
+.brickForm {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    gap: 16px;
+}
+
+.brickForm div {
+    display: flex;
+    flex-direction: column;
+}
+
+.brickForm div input,
+.brickForm div textarea {
+    width: 256px;
+    padding: 8px;
+}
+
+.brickForm div textarea {
+    width: 512px;
+}
+
+.brickForm button {
+    width: 256px;
+    padding: 8px;
+    background-color: #a27272;
+    color: white;
+}
+
+.brickForm div label {
+    font-weight: bold;
+}

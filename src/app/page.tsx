@@ -14,9 +14,11 @@ export default function Home() {
         Hello, visitor!
       </h1>
       <Brick name="introductoryText" />
+      <Brick name="buildFormForSubmission" />
       <Brick name="stockpile" />
       <Brick name="timeTraveler" />
       <Brick name="underConstructionGif" />
+      <Brick name="soggyCat" />
     </main>
   );
 }

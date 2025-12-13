@@ -30,8 +30,13 @@ export const bricks: Brick[] = [
         {
             version: 4,
             name: 'IntroductoryText',
-            releaseDate: new Date('2025-12-12'),
+            releaseDate: new Date('2025-12-11'),
             instruction: "Define `brick` clearly on the page. pretend the person knows nothing.",
+        },
+        {
+            version: 5,
+            name: 'IntroductoryText',
+            releaseDate: new Date('2025-12-12'),
         }],
     },
     {
@@ -123,27 +128,39 @@ export const bricks: Brick[] = [
             name: 'quackintosh',
         },
         createdTime: new Date('2025-12-10'),
-        finishedTime: new Date('2025-12-12')
+        finishedTime: new Date('2025-12-11')
     },
     {
         name: 'buildFormForSubmission',
         instruction: "Build a form for submission of the `Brick`",
-        isDone: false,
+        isDone: true,
         order: 8,
         owner: {
             name: 'quackintosh',
         },
         createdTime: new Date('2025-12-10'),
+        finishedTime: new Date('2025-12-12'),
+        versions: [{
+            version: 1,
+            name: 'BrickForm',
+            releaseDate: new Date('2025-12-12'),
+        }],
     },
     {
         name: 'soggyCat',
         instruction: "Add soggy cat meme.",
-        isDone: false,
+        isDone: true,
         order: 9,
         owner: {
             name: 'carrie',
         },
         createdTime: new Date('2025-12-11'),
+        finishedTime: new Date('2025-12-13T01:04:10.961Z'),
+        versions: [{
+            version: 1,
+            name: 'SoggyCat',
+            releaseDate: new Date('2025-12-13T01:04:10.961Z'),
+        }],
     },
     {
         name: 'bricksWall',
@@ -155,15 +172,14 @@ export const bricks: Brick[] = [
         },
         createdTime: new Date('2025-12-11T06:48:10'),
     },
-    // {
-    //     name: 'stockPileIdea',
-    //     instruction: "Add a stockpile (todo) list for bricks.",
-    //     isDone: true,
-    //     order: 11,
-    //     owner: {
-    //         name: 'oz',
-    //     },
-    //     createdTime: new Date('2025-12-03'),
-    //     finishedTime: new Date('2025-12-03'),
-    // },
+    {
+        name: 'foremanOfTheDay',
+        instruction: "Display the social handle of the user who made the most recent request as “Foreman of the Day” somewhere on the page.",
+        isDone: false,
+        order: 11,
+        owner: {
+            name: 'mnshanbhag',
+        },
+        createdTime: new Date('2025-12-13T01:23:19.355Z'),
+    }
 ];
