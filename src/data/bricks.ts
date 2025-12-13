@@ -117,6 +117,11 @@ export const bricks: Brick[] = [
             version: 1,
             name: 'UnderConstructionGif',
             releaseDate: new Date('2025-12-08'),
+        },
+        {
+            version: 2,
+            name: 'UnderConstructionGif',
+            releaseDate: new Date('2025-12-13T15:16:38.012Z'),
         }],
     },
     {
@@ -175,11 +180,38 @@ export const bricks: Brick[] = [
     {
         name: 'foremanOfTheDay',
         instruction: "Display the social handle of the user who made the most recent request as “Foreman of the Day” somewhere on the page.",
-        isDone: false,
+        isDone: true,
         order: 11,
         owner: {
             name: 'mnshanbhag',
         },
-        createdTime: new Date('2025-12-13T01:23:19.355Z'),
+        createdTime: new Date('2025-12-11T01:23:19.355Z'),
+        finishedTime: new Date('2025-12-13T15:16:38.012Z'),
+        versions: [{
+            version: 1,
+            name: 'ForemanOfTheDay',
+            releaseDate: new Date('2025-12-13T15:16:38.012Z'),
+        }],
+    },
+    {
+        name: 'backgroundColor',
+        instruction: "Add a light green and even lighter green checkered background",
+        isDone: false,
+        order: 12,
+        owner: {
+            name: 'carrie/evie',
+        },
+        createdTime: new Date('2025-12-13T04:42:45.526Z'),
+    },
+    {
+        name: 'c64Theme',
+        instruction: "C64 color setup from cyber space",
+        isDone: false,
+        order: 13,
+        owner: {
+            name: 'Dr Quackintosh Dubly',
+            profile: "https://www.slowjamastan.org/"
+        },
+        createdTime: new Date('2025-12-13T04:42:45.526Z'),
     }
 ];
