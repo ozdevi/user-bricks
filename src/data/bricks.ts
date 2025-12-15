@@ -213,5 +213,26 @@ export const bricks: Brick[] = [
             profile: "https://www.slowjamastan.org/"
         },
         createdTime: new Date('2025-12-13T04:42:45.526Z'),
+    },
+    {
+        name: 'marqueeText',
+        instruction: "Add some marquee text, doesn't matter what",
+        isDone: false,
+        order: 14,
+        owner: {
+            name: 'crow'
+        },
+        createdTime: new Date('2025-12-15T11:43:00.000Z'),
+    },
+    {
+        name: 'ratMoment',
+        instruction: 'Include a rat moment',
+        isDone: false,
+        order: 15,
+        owner: {
+            name: 'Tjalgahorn',
+            profile: "https://cyberspace.online/tjalgahorn"
+        },
+        createdTime: new Date('2025-12-15T17:41:09.000Z'),
     }
 ];
