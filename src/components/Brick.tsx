@@ -53,7 +53,6 @@ const Brick = ({
 
     const { bricks: contextBricks, currentDate } = useBrickContext();
     const brick = contextBricks.find(brick => brick.name === name);
-    console.log('brick', brick);
     // temporary algorithm
     const latestVersion = brick?.versions
         ?.sort((a, b) => b.releaseDate.getTime() - a.releaseDate.getTime())

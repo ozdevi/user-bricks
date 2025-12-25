@@ -7,6 +7,7 @@ export default function Home() {
 
   return (
     <main>
+      <h1>User Bricks</h1>
       <Brick name="userBricksLogo">
         <Image src="/assets/user-bricks-logo.png" alt="User Bricks Logo" width="100" style={{ verticalAlign: 'middle' }} />
       </Brick>
@@ -19,6 +20,8 @@ export default function Home() {
       <Brick name="timeTraveler" />
       <Brick name="underConstructionGif" />
       <Brick name="soggyCat" />
+      <Brick name="themeSwitcher" />
+      <Brick name="ratMoment" />
     </main>
   );
 }

@@ -1,0 +1,39 @@
+.marqueeContainer {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 300px;
+}
+
+.marqueeText1 {
+    display: inline-block;
+    animation: marquee1 10s linear infinite;
+    text-decoration: line-through;
+    margin-right: 1rem;
+}
+
+.marqueeText2 {
+    display: inline-block;
+    animation: marquee2 10s linear infinite;
+    animation-delay: 5s;
+    text-decoration: line-through;
+}
+
+@keyframes marquee1 {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee2 {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-200%);
+    }
+}

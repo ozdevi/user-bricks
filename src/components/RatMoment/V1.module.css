@@ -1,0 +1,18 @@
+.ratMoment {
+    position: fixed;
+    bottom: 0;
+    right: 128px;
+    background-image: url('/assets/rat-moment.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 88px;
+    width: 128px;
+    height: 128px;
+    transition: all 0.2s ease-in;
+}
+
+.ratMoment:hover {
+    transform: scale(1.2);
+    background-position-y: 30px;
+    transition: all 0.2s ease-out;
+}

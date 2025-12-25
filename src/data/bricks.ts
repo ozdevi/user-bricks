@@ -194,45 +194,74 @@ export const bricks: Brick[] = [
         }],
     },
     {
-        name: 'backgroundColor',
+        name: 'themeSwitcher',
         instruction: "Add a light green and even lighter green checkered background",
-        isDone: false,
+        isDone: true,
         order: 12,
         owner: {
             name: 'carrie/evie',
         },
         createdTime: new Date('2025-12-13T04:42:45.526Z'),
+        finishedTime: new Date('2025-12-15T23:16:33.222Z'),
+        versions: [{
+            version: 1,
+            name: 'ThemeSwitcher',
+            releaseDate: new Date('2025-12-15T15:00:00.000Z'),
+        }],
     },
     {
         name: 'c64Theme',
         instruction: "C64 color setup from cyber space",
-        isDone: false,
+        isDone: true,
         order: 13,
         owner: {
             name: 'Dr Quackintosh Dubly',
             profile: "https://www.slowjamastan.org/"
         },
         createdTime: new Date('2025-12-13T04:42:45.526Z'),
+        finishedTime: new Date('2025-12-15T23:16:33.222Z'),
     },
     {
         name: 'marqueeText',
         instruction: "Add some marquee text, doesn't matter what",
-        isDone: false,
+        isDone: true,
         order: 14,
         owner: {
             name: 'crow'
         },
         createdTime: new Date('2025-12-15T11:43:00.000Z'),
+        finishedTime: new Date('2025-12-25T00:00:00.000Z'),
+        versions: [{
+            version: 1,
+            name: 'MarqueeText',
+            releaseDate: new Date('2025-12-25T00:00:00.000Z'),
+        }]
     },
     {
         name: 'ratMoment',
         instruction: 'Include a rat moment',
-        isDone: false,
+        isDone: true,
         order: 15,
         owner: {
             name: 'Tjalgahorn',
             profile: "https://cyberspace.online/tjalgahorn"
         },
         createdTime: new Date('2025-12-15T17:41:09.000Z'),
+        finishedTime: new Date('2025-12-23T00:00:00.000Z'),
+        versions: [{
+            version: 1,
+            name: 'RatMoment',
+            releaseDate: new Date('2025-12-23T00:00:00.000Z'),
+        }]
+    },
+    {
+        name: 'shakeTuna',
+        instruction: "All right, I think we need a can of tuna over here by the cat shaking back-and-forth",
+        isDone: false,
+        order: 16,
+        owner: {
+            name: 'rob',
+        },
+        createdTime: new Date('2025-12-25T01:57:00.000Z'),
     }
 ];

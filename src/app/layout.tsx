@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { BrickProvider } from "@/providers/BrickProvider"
+import { ThemeProvider } from "@/providers/ThemeProvider";
 import "./layout.css";
 
 export const metadata: Metadata = {
@@ -16,7 +17,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <BrickProvider>
-          {children}
+          <ThemeProvider>
+            {children}
+          </ThemeProvider>
         </BrickProvider>
       </body>
     </html>
