@@ -263,5 +263,25 @@ export const bricks: Brick[] = [
             name: 'rob',
         },
         createdTime: new Date('2025-12-25T01:57:00.000Z'),
-    }
+    },
+    {
+        name: 'reDesignI',
+        instruction: "organize this thing. same line: Headline and new bricks graphic header. New title \"Another Brick in the cell.\" subhead. centered below",
+        isDone: false,
+        order: 17,
+        owner: {
+            name: 'quackintosh',
+        },
+        createdTime: new Date('2025-12-26T21:51:00.000Z'),
+    },
+    {
+        name: 'reDesignII',
+        instruction: "Instructions and form on left stock pile to do and time travel bar on Right time travel bar above stockpile we try to train like a little bit",
+        isDone: false,
+        order: 18,
+        owner: {
+            name: 'me',
+        },
+        createdTime: new Date('2025-12-26T21:52:00.000Z'),
+    },
 ];
